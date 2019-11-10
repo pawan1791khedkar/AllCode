@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel= "tests" thread-count="3">
+ 
+ <test name="Testchrome">
+	<parameter name="browser_name" value="chrome" />
+	<!-- Banking Params -->
+	<parameter name="parabank_username" value="john" />
+	<parameter name="parabank_password" value="demo" />
+	<parameter name="zeroapp_username" value="username" />
+	<parameter name="zeroapp_password" value="password" />
+	<parameter name="url_zeroapp" value="http://zero.webappsecurity.com/login.html" />
+	<parameter name="url_parabank" value="https://www.axisbank.com/" />
+	<parameter name="url_icici" value="https://www.icicibank.com/" />
+	<parameter name="url_sbi" value="https://www.onlinesbi.com/" />
+	<!-- Social Network Params -->
+	<parameter name="url_fb" value="https://www.facebook.com/" />
+	<parameter name="url_tw" value="https://twitter.com/login" />
+	<parameter name="url_li" value="https://www.linkedin.com/" />
+	<parameter name="url_instragram" value="https://www.instagram.com/?hl=en" />
+	<classes>
+		<class name="Cross_ParallalTests.TC_Banking" />
+		<class name="Cross_ParallalTests.TC_SocialNetwork"/>
+	</classes>
+</test>
+
+	<test name="Testfirefox">
+	<parameter name="browser_name" value="firefox" />
+	<!-- Ecommerce Params -->
+	<parameter name="url_amazon" value="https://www.amazon.in/" />
+	<parameter name="url_flipkart" value="https://www.flipkart.com/" />
+	<parameter name="url_myntra" value="https://www.myntra.com/" />
+	<parameter name="url_jabong" value="https://www.jabong.com/" />
+	<!-- Telecom Params -->
+	<parameter name="url_airtel" value="https://www.airtel.in/" />
+	<parameter name="url_idea" value="https://www.ideacellular.com/" />
+	<parameter name="url_vodafone" value="https://www.vodafone.in/" />
+	<parameter name="url_tata" value="https://www.tatadocomo.com/en-in/" />
+		<classes>
+			<class name="Cross_ParallalTests.TC_Ecommerce"/>
+			<class name="Cross_ParallalTests.TC_Telecom"/>
+			
+		</classes>
+	</test>	
+	
+	</suite>
