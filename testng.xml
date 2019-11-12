@@ -1,35 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite">
-<listeners>
-      <listener class-name="listeners_Demo.TestNg_Listeners"/>
-    </listeners>
   <test name="Test">
     <classes>
-      <class name="com.Product.TC.TC_Buying_Product"/>
-      <class name="com.Product.TC.TC_Check_Order"/>
-      <class name="com.Product.PO.IRetryAnalyzer"/>
-      <class name="com.Product.TC.TC_Search"/>
-      <class name="listeners_Demo.MyFirstcase"/>
-      <class name="com.Product.TC.TC_MegaMenu"/>
-      <class name="listeners_Demo.SSlCertificate"/>
-      <class name="com.Product.TC.TESTNG_REGISTER"/>
-      <class name="com.Product.TC.TC_Product_Add"/>
-      <class name="com.Product.TC.TC_Data_Provider"/>
-      <class name="GF.GoogleForm"/>
-      <class name="com.Product.TC.TC_QuickView"/>
-      <class name="com.Product.TC.Login_CsCart_TC"/>
-      <class name="com.Product.TC.Tc_ScreenShot"/>
-      <class name="listeners_Demo.BootsttrapDropdown"/>
-      <class name="com.Product.TC.TC_Cscart_ProductType"/>
-      <class name="com.Product.TC.TESTNG_LOGIN"/>
-      <class name="listeners_Demo.JavaScriptPopup"/>
-      <class name="com.Product.TC.TCGoogleForm"/>
-      <class name="listeners_Demo.Generate_Reportlog"/>
-      <class name="listeners_Demo.Ajax"/>
-      <class name="com.Product.TC.TC_Product"/>
-      <class name="com.Product.TC.TC_ViewItem"/>
-      <class name="com.Product.TC.TC_CscartProductSearch"/>
+      <class name="Step_Defination_File.STEPS_CsCartHomeSearch"/>
+      <class name="Managers.STEPS_Common"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
