@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" >
+ <parameter name ="url" value="http://zero.webappsecurity.com/login.html"/>
+ <parameter name="browserType" value="chrome"/>
+  <test name="TestNGTest" >
+    <classes> 
+       <class name="ZeroBank.TC.TC_smoke" />
+    </classes>
+  </test> <!-- TstNGTest -->
+</suite> 
